@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --earth-green: #2E7D32;
+  --soil-brown: #5D4037;
+  --sky-blue: #1976D2;
+  --leaf-green: #81C784;
+  --sunset-orange: #FF7043;
+  --sunlight-yellow: #FDD835;
+  --stone-gray: #757575;
+  --cloud-white: #FFFFFF;
+  --night-black: #212121;
+}
+
+@layer base {
+  body {
+    color: #4B5563;
+    background-color: white;
+    font-family: var(--font-open-sans, 'Open Sans'), sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--night-black);
+    margin-bottom: 1rem;
+    font-family: var(--font-montserrat, 'Montserrat'), sans-serif;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: var(--earth-green);
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--leaf-green);
+  }
+}
+
+@layer components {
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .btn-primary {
+    background-color: var(--sunset-orange);
+    color: white !important;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgba(255, 112, 67, 0.9);
+    color: white !important;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white !important;
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white !important;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--earth-green);
+    color: var(--earth-green) !important;
+  }
+  
+  .btn-outline:hover {
+    background-color: rgba(46, 125, 50, 0.1);
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 80rem;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .testimonial {
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--soil-brown);
+    font-family: var(--font-caveat, 'Caveat'), cursive;
+  }
+}
+
+/* Custom styles for specific components */
+.hero {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  background-color: var(--soil-brown);
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--sunlight-yellow);
+}
+
+.program-img {
+  height: 12rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.stat-number {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--earth-green);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.125rem;
+}
+
+/* Additional styles for better display */
+.bg-earth-green {
+  background-color: var(--earth-green);
+}
+
+.bg-soil-brown {
+  background-color: var(--soil-brown);
+}
+
+.bg-leaf-green {
+  background-color: var(--leaf-green);
+}
+
+.bg-sunset-orange {
+  background-color: var(--sunset-orange);
+}
+
+.text-earth-green {
+  color: var(--earth-green);
+}
+
+.text-night-black {
+  color: var(--night-black);
+}
+
+.text-stone-gray {
+  color: var(--stone-gray);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+  h1 {
+    font-size: 1.875rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}

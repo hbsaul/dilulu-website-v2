@@ -1,0 +1,33 @@
+/* Sample hero image */
+.hero {
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 0;
+  color: white;
+  text-align: center;
+}
+
+/* Sample garden image */
+.garden-img {
+  background-image: url('/images/garden.jpg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Sample compost image */
+.compost-img {
+  background-image: url('/images/compost.jpg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Sample education image */
+.education-img {
+  background-image: url('/images/education.jpg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
