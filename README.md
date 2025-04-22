@@ -73,6 +73,8 @@ Dilulu is a non-profit organization that empowers children and families in Afric
    MONGODB_URI=your_mongodb_connection_string
    JWT_SECRET=your_jwt_secret_key
    NEXT_PUBLIC_SITE_URL=http://localhost:3000
+   NEXT_PUBLIC_SITE_NAME=Dilulu Website
+   NEXT_PUBLIC_SITE_DESCRIPTION=Dilulu is a non-profit organization that empowers children and families in Africa through gardening, composting, and natural living programs.
    ```
 
 4. Run the development server:
