@@ -203,10 +203,13 @@ const EventCalendar: React.FC<EventCalendarProps> = ({ events }) => {
             </div>
             
             {selectedEvent.imageUrl && (
-              <div 
-                className="h-48 bg-cover bg-center rounded-lg mb-4"
-                style={{ backgroundImage: `url(${selectedEvent.imageUrl})` }}
-              ></div>
+              <div className="h-48 rounded-lg mb-4 overflow-hidden"> {/* Container with overflow hidden */}
+                <img
+                  src={selectedEvent.imageUrl}
+                  alt={`Image for ${selectedEvent.title}`} // Added alt text
+                  className="w-full h-full object-cover" // Image styling for cover effect
+                />
+              </div>
             )}
             
             <div className="mb-4">

@@ -61,8 +61,7 @@ export default function Programs() {
               <p className="mt-4">Explore our program areas below to see how we're sowing seeds of change in Libreville and beyond.</p>
             </div>
             <div 
-              className="md:w-1/2 h-80 bg-cover bg-center rounded-xl"
-              style={{ backgroundImage: "url('https://source.unsplash.com/random/600x400/?garden,children,africa')" }}
+              className="md:w-1/2 h-80 bg-cover bg-center rounded-xl program-hero-image"
             ></div>
           </div>
 

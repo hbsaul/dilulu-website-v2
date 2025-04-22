@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
-import dbConnect from '@/lib/dbConnect';
-import Content from '@/models/Content';
-import { verifyToken } from '@/lib/auth';
+import dbConnect from '../../../../../src/lib/dbConnect';
+import Content from '../../../../../src/models/Content';
+import { verifyToken } from '../../../../../src/lib/auth';
 
 export async function POST(request) {
   await dbConnect();

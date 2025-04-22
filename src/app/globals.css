@@ -14,6 +14,10 @@
   --night-black: #212121;
 }
 
+.program-hero-image {
+  background-image: url('https://source.unsplash.com/random/600x400/?garden,children,africa');
+}
+
 @layer base {
   body {
     color: #4B5563;
@@ -143,6 +147,12 @@
     font-size: 1.25rem;
     color: var(--soil-brown);
     font-family: var(--font-caveat, 'Caveat'), cursive;
+  }
+
+  .event-image {
+    background-image: var(--event-image-url);
+    background-size: cover;
+    background-position: center;
   }
 }
 

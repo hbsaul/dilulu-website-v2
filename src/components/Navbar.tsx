@@ -30,7 +30,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-earth-green text-white py-4 sticky top-0 z-50">
+    <header className="bg-soil-brown text-white py-8 px-4 sticky top-0 z-50">
       <div className="container flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-white hover:text-white flex items-center">
           <span className="mr-2">Dilulu</span>

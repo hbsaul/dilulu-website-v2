@@ -208,8 +208,9 @@ export default function CMSEditor() {
           <div className="flex space-x-4">
             <div className="flex items-center mr-4">
               <span className="mr-2">{t('common.language')}:</span>
-              <select 
-                value={contentLanguage} 
+              <select
+                title={t('common.language')}
+                value={contentLanguage}
                 onChange={(e) => handleLanguageChange(e.target.value)}
                 className="border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-earth-green"
               >
@@ -340,6 +341,7 @@ export default function CMSEditor() {
                         onChange={(e) => setEditContent(e.target.value)}
                         rows={10}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-earth-green"
+                        aria-label={`${t('cms.editContentFor')} ${section.title}`}
                       ></textarea>
                       <div className="mt-2 flex justify-end space-x-2">
                         <button
